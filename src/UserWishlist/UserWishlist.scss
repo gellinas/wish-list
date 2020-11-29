@@ -1,0 +1,69 @@
+@import "../styles.scss";
+
+.user-wishlist-container {
+  @include basicLayout();
+
+  .list-navbar {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    padding: 2rem;
+    background-color: #ecebeb;
+
+    .navbar-text {
+      color: black;
+      font-size: 3.5vw;
+      word-spacing: 1vw;
+      letter-spacing: 0.6vw;
+      opacity: none;
+    }
+
+    .logout-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .wishlist-list {
+    display: flex;
+    width: 100vw;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+
+    .list-item {
+      display: grid;
+      grid-template-columns: 33vw auto 5vw;
+      justify-items: center;
+      align-items: center;
+
+      .wish-item-img {
+        display: grid;
+        max-width: 22vw;
+        max-height: 35vh;
+        justify-self: center;
+        cursor: pointer;
+      }
+
+      .item-description {
+        display: grid;
+        font-size: 1.75vw;
+        word-spacing: 0.6vw;
+        letter-spacing: 0.4vw;
+        justify-self: start;
+      }
+
+      .item-delete {
+        justify-self: end;
+      }
+    }
+  }
+
+  .add-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 1.25rem;
+    margin: 3vw;
+    height: 6vh;
+    width: 6vh;
+  }
+}

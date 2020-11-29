@@ -1,0 +1,50 @@
+@import "../styles.scss";
+
+.create-account-page {
+  @include basicLayout();
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  ::after {
+    content: "";
+    background-image: url(../assets/dandelion_wish.jpg);
+    background-color: #ffffff;
+    background-size: cover;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .create-account-container {
+    background-color: #ffffff;
+    width: 35vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3rem;
+
+    .create-account-head {
+      width: 35vw;
+      height: 11vh;
+      font-size: 3.5vw;
+      letter-spacing: 0.25rem;
+    }
+
+    .account-form {
+      display: flex;
+      justify-content: center;
+      height: 70vh;
+      width: 35vw;
+    }
+
+    .error-message {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../styles.scss";
+
+.login-page {
+  @include basicLayout();
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  ::after {
+    content: "";
+    background-image: url(../assets/dandelion_wish.jpg);
+    background-color: #ffffff;
+    background-size: cover;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .login-container {
+    background-color: #ffffff;
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3rem;
+
+    .login-head {
+      width: 30vw;
+      height: 20vh;
+      font-size: 5.5vw;
+      word-spacing: 0.75vw;
+      letter-spacing: 1vw;
+    }
+
+    .login-form {
+      display: flex;
+      justify-content: center;
+      height: 40vh;
+      width: 30vw;
+    }
+
+    .login-button {
+      width: 8vw;
+    }
+
+    .error-login {
+      color: red;
+    }
+  }
+}

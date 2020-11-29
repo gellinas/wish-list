@@ -1,0 +1,36 @@
+@import "../styles.scss";
+
+.welcome-container {
+  @include basicLayout();
+  justify-content: flex-start;
+
+  ::after {
+    content: "";
+    background-image: url(../assets/dandelion_wish.jpg);
+    background-color: #ffffff;
+    background-size: cover;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #welcome-message {
+    font-size: 6.5vw;
+    word-spacing: 1.5vw;
+    letter-spacing: 1.25vw;
+    margin: 5rem 0 8rem 0;
+  }
+
+  .welcome-buttons {
+    display: flex;
+    flex-direction: column;
+
+    Button {
+      margin: 1rem;
+    }
+  }
+}
